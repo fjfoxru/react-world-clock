@@ -6,7 +6,7 @@ function ClocksAddForm (props) {
     const [timeZone, setTimeZone] = useState('');
 
     const addClock = () => {
-        props.onAddnewClock({title, timeZone});
+        props.onAddnewClock({'title' : title, 'timeZone': timeZone});
     };
     const onChangeTitle = (e) => {
         setTitle(e.target.value);
